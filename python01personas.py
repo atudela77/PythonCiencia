@@ -20,12 +20,12 @@ print(df)
 # Podemos filtrar los datos de un DataFrame mediante la siguiente
 #  sintaxis:
 # df[df[COLUMNA] == valor]
-df_filtrado = df[df['edad'] > 30]
+df_filtrado = df[(df['edad'] > 30)]
 print("DF Filtrado")
 print(df_filtrado)
 
 # Ordenar por una o variuas columnas
 # df.sort_values(COLUMNA)   
-df_sorted = df.sort_values('edad')
+df_sorted = df.sort_values(['edad', 'ciudad'])
 print("DF Ordenado")
 print(df_sorted)
